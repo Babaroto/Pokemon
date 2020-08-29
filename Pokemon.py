@@ -225,7 +225,6 @@ if __name__ == '__main__':
     a = int(input("1.-Charizard, 2.- Blastoise, 3.-Venasaur \n4.-Charmeleon, 5.-Warturtle, 6.-Ivysaur \n7.-Charmander, 8.-Squirtle, 9.- Bulbasaur \n"))
     print("SELECCION DE POKEMON 2: ")
     b = int(input("1.-Charizard, 2.- Blastoise, 3.-Venasaur \n4.-Charmeleon, 5.-Warturtle, 6.-Ivysaur \n7.-Charmander, 8.-Squirtle, 9.- Bulbasaur \n"))
-
     # CONDICIONALES DE CHARIZARD
     if a == 1:
         if b == 2:
@@ -246,7 +245,7 @@ if __name__ == '__main__':
             Charizard.lucha(Bulbasaur)
 
     # CONDICIONALES BLASTOISE
-    if a == 2 :
+    elif a == 2 :
         if b == 1 :
             Blastoise.lucha(Charizard)
         elif b == 3 :
@@ -265,7 +264,7 @@ if __name__ == '__main__':
             Blastoise.lucha(Bulbasaur)
 
     # CONDICIONALES DE VENASAUR
-    if a == 3 :
+    elif a == 3 :
         if b == 1 :
             Venasaur.lucha(Charizard)
         elif b == 2 :
@@ -284,7 +283,7 @@ if __name__ == '__main__':
             Venasaur.lucha(Bulbasaur)
 
     # CONDICIONALES DE CHARMELEON
-    if a == 4 :
+    elif a == 4 :
         if b == 1 :
             Charmeleon.lucha(Charizard)
         elif b == 2 :
@@ -303,7 +302,7 @@ if __name__ == '__main__':
             Charmeleon.lucha(Bulbasaur)
 
     # CONDICIONALES DE WARTURTLE
-    if a == 5 :
+    elif a == 5 :
         if b == 1 :
             Warturle.lucha(Charizard)
         elif b == 2 :
@@ -322,7 +321,7 @@ if __name__ == '__main__':
             Warturle.lucha(Bulbasaur)
 
     # CONDICIONALES DE IVYSAUR
-    if a == 6 :
+    elif a == 6 :
         if b == 1 :
             Ivysaur.lucha(Charizard)
         elif b == 2 :
@@ -341,7 +340,7 @@ if __name__ == '__main__':
             Ivysaur.lucha(Bulbasaur)
 
     # CONDICIONALES DE CHARMANDER
-    if a == 7 :
+    elif a == 7 :
         if b == 1 :
             Charmander.lucha(Charizard)
         elif b == 2 :
@@ -360,7 +359,7 @@ if __name__ == '__main__':
             Charmander.lucha(Bulbasaur)
 
     # CONDICIONALES DE SQUIRTLE
-    if a == 8 :
+    elif a == 8 :
         if b == 1 :
             Squirtle.lucha(Charizard)
         elif b == 2 :
@@ -379,7 +378,7 @@ if __name__ == '__main__':
             Squirtle.lucha(Bulbasaur)
 
     # CONDICIONALES BULBASAUR
-    if a == 9 :
+    elif a == 9 :
         if b == 1 :
             Bulbasaur.lucha(Charizard)
         elif b == 2 :
@@ -396,3 +395,7 @@ if __name__ == '__main__':
             Bulbasaur.lucha(Charmander)
         elif b == 8 :
             Bulbasaur.lucha(Squirtle)
+    
+    #SI SE SELECCIONA CUALQUIER OTRA OPCION 
+    else:
+        print("Esa opcion no existe")
